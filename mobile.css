@@ -1,4 +1,4 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 980px) {
   body {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -61,4 +61,72 @@
   }
   /* about section */
   
+  #about{
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.image{
+  margin:1rem  auto;
+    height: 40vh;
+}
+.about-content{
+    height: 90vh;
+    margin: 1rem;;
+}
+.about-content h2{
+    font-size: 20px;
+}
+.about-content span{
+    /* margin: 20px 0; */
+}
+.about-content p{
+    font-size: 14px;
+}
+.links li a{
+    font-size: 14px;
+}
+.links{
+    margin: 5px 0;
+}
+.links li{
+    padding: 6px 10px;
+}
+
+/* our team */
+.team-row{
+  display:grid;
+  grid-template-rows: 2fr 2fr 2fr;
+  justify-content:space-evenly;
+  gap:1rem;
+}
+/* careers */
+.careers-heading{
+
+  
+}
+#careers-container {
+
+display: grid;
+grid-template-columns: 2fr ;
+
+}
+
+.career-img-1{
+display:none;
+}
+
+
+/* ******************our values******************** */
+
+@media screen and (max-width: 800px) {
+  .company-values{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .company-values{
+    width: 100%;
+  }
+}
+
 }
