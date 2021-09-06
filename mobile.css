@@ -1,0 +1,64 @@
+@media only screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  /* cta section  */
+  #call-to-action {
+    max-width: 30rem;
+    padding: 2rem;
+    font-size: 10px;
+  }
+  .cta-img-1 {
+    display:none;
+  }
+  /* ******* */
+  /* our services */
+  .container {
+    max-width: 30rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  /* ********* */
+  #Features {
+  }
+
+  .features-img-1 {
+   display:none;
+  }
+
+  .f-heading {
+    margin-left: 0rem;
+    padding: 0;
+    color: #1221dc;
+    text-decoration: underline #1221dc dotted;
+  }
+
+  /* ****************** */
+
+  /* our work */
+  #work {
+    margin: 0;
+    padding: 1rem;
+  }
+  .container-3 img {
+    margin: 0;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  /* ********* */
+  .card {
+    display: block;
+  }
+  .card .blog-img-container {
+    height: 250px;
+    width: 100%;
+  }
+  .card-content {
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  /* about section */
+  
+}
