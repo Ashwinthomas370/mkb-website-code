@@ -1,4 +1,5 @@
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 800px) {
   body {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -14,14 +15,162 @@
   .cta-img-1 {
     display:none;
   }
-  /* ******* */
-  /* our services */
-  .container {
-    max-width: 25rem;
-    margin: 0;
-    padding: 1rem;
+  /* ******** our services******/
+  .service-flex-container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-content: center;
+    }
+
+ /* ******************our values******************** */
+
+@media screen and (max-width: 800px) {
+  .company-values{
+    width: 50%;
   }
+}
+@media screen and (max-width: 500px) {
+  .company-values{
+    width: 100%;
+  }
+}
+
+
+  /* ****************** */
+
+  /* our work */
+  #work {
+    
+   
+  }
+  .container-3{
+
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+  }
+  .container-3 img {
+   
+    /* padding: 1rem; */
+ 
+  }
+
   /* ********* */
+  .card {
+    display: block;
+  }
+  .card .blog-img-container {
+    height: 250px;
+    width: 100%;
+  }
+  .card-content {
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  /* about section */
+  
+  #about{
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+.image{
+  margin:1rem  auto;
+    height: 40vh;
+}
+.about-content{
+    height: 90vh;
+    margin: 1rem;;
+}
+.about-content h2{
+    font-size: 20px;
+}
+.about-content span{
+    /* margin: 20px 0; */
+}
+.about-content p{
+    font-size: 14px;
+}
+.links li a{
+    font-size: 14px;
+}
+.links{
+    margin: 5px 0;
+}
+.links li{
+    padding: 6px 10px;
+}
+
+/* our team */
+.team-row{
+  display:grid;
+  grid-template-rows: 2fr 2fr 2fr;
+  justify-content:space-evenly;
+  gap:1rem;
+}
+/* careers */
+@media screen and (max-width:1000px) {
+  .careers-flex-container {
+      display:grid;
+     grid-template-columns:repeat(1,2fr);
+     justify-content: center;
+
+     gap:2rem;
+     
+    }
+ 
+  }
+
+
+
+
+/* footer  */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 90%;
+}
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******************************** */
+
+
+
+@media only screen and (max-width: 400px) {
+ html, body {
+ 
+    scroll-behavior: smooth;
+    margin: 0;
+
+  }
+  /* cta section  */
+  #call-to-action {
+    
+    padding: 2rem;
+    font-size: 10px;
+  }
+  .cta-img-1 {
+    display:none;
+  }
+  /* ******* */
+ 
  /* ******************our values******************** */
 
 @media screen and (max-width: 800px) {
@@ -41,12 +190,18 @@
   /* our work */
   #work {
     margin: 0;
-    padding: 1rem;
+   
+  }
+  .container-3{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  ;
   }
   .container-3 img {
-    margin: 1rem;
+ 
     /* padding: 1rem; */
-    max-width: 50%;
+ 
   }
 
   /* ********* */
@@ -103,13 +258,13 @@
 }
 /* careers */
 .careers-heading{
-display: none;
+
   
 }
 #careers-container {
 
 display: grid;
-grid-template-columns:repeat(2fr,2fr);
+grid-template-columns:repeat(2fr,2fr,2fr);
 
 }
 

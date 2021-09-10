@@ -2,13 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+
 /* header */
 
 .logo {
@@ -16,7 +13,7 @@ body {
   width: 70px;
   height: 70px;
   padding: 10px 10px;
-  margin-left: 4rem;
+  /* margin-left: 1rem; */
 }
 a {
   color: #000;
@@ -109,11 +106,16 @@ h1 .h1-color-change {
   color: #1221dc;
 }
 
+
+
+
+
 /*  */
 .cta-heading-section h3 {
-  font-size: 200%;
+  font-size: 150%;
   padding: 30px;
   margin: 20px;
+  color:rgb(99, 99, 99);
 }
 
 .cta-btn {
@@ -126,50 +128,49 @@ h1 .h1-color-change {
 }
 /* our services */
 
-#Services {
+#Services{
   background-color: #1221dc;
-  width: 100%;
+  padding:2rem;
 }
-#Services .m-heading {
-  text-align: center;
-  padding: 10px;
+.service-heading{
   color: #fff;
-}
-
-#Services .m-heading {
-  padding: 1rem;
+  text-align: center;
   text-decoration: underline #fff dotted;
 }
-.container {
-  width: 1100px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-  margin-left: 12rem;
-}
+.service-flex-container{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
 
-.container .box {
-  position: relative;
-  width: 320px;
+}
+.service-box{
   background-color: #fff;
-  padding: 100px 60px 60px;
+font-size: 16px;
+  width: 350px;
+  background-color: #fff;
+ padding:3rem;
   border-radius: 12px;
-  margin: 1rem;
+  margin: 2rem;
 
   box-shadow: 3px 3px;
 }
 
-.container .box:hover {
+.service-box:hover {
   background-color: rgb(163, 168, 235);
   color: #fff;
 }
-.btn-2 {
-  background-color: #fff;
+.service-btn {
+  
+  text-align: center;
+ padding:10px;
+ border-radius:5px;
+ border: none;
+
+}
+.service-btn-link{
+  text-decoration: none;;
   color:#1221dc;
-  border: none;
-  padding: 10px;
-  border-radius: 12px;
 }
 /* ***************************************************** */
 
@@ -182,8 +183,9 @@ h1 .h1-color-change {
 }
 .core-values h1{
   display: inline-block;
+  color: #1221dc;
   text-transform: uppercase;
-  border-bottom: 4px solid #1221dc;
+  text-decoration: underline #1221dc dotted;
   font-size: 20px;
   padding-bottom: 10px;
   margin-top: 40px;
@@ -210,7 +212,20 @@ h1 .h1-color-change {
   color: #1221dc;
   font-size: 34px;
   margin-bottom: 30px;
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate infinite;
 }
+
+/* icons animation */
+
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+
+
+
 .company-values h2{
   font-size: 18px;
   text-transform: uppercase;
@@ -226,7 +241,7 @@ h1 .h1-color-change {
 /* our work section */
 #work {
   padding: 2rem;
-  width: 100%;
+
   background-color: #1221dc;
 }
 
@@ -239,7 +254,7 @@ h1 .h1-color-change {
 }
 .container-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
   gap: 20px;
   background-color: #1221dc;
   padding: 3rem;
@@ -357,7 +372,7 @@ h1 .h1-color-change {
 .team-heading {
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   text-decoration: underline #ffffff dotted;
 }
 .team-content {
@@ -421,77 +436,42 @@ h1 .h1-color-change {
 /* ************************* */
 /* careers */
 
-#careers {
-  margin: 5rem;
-  background-color: #fff;
-}
-
-.career-img-1 {
-  width: 35%;
-  float: right;
-  margin: 2rem;
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 35px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
-}
-
-.careers-heading {
-  margin: 3rem 0 2rem 30rem;
+.careers-heading{
   text-align: center;
-  padding: 1rem;
   color: #1221dc;
   text-decoration: underline #1221dc dotted;
+  margin: 3rem;
 }
 
-.careers-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+
+.careers-flex-container{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3rem;
+  margin: 2rem;;
+ 
+
+  box-shadow:10x #000;
 }
 
-.careers-container > .careers-1 {
-  margin: 1rem;
+.careers-1{
   background-color: #1221dc;
-  color: #fff;
-  width: 80%;
-  padding: 2rem;
+color: #fff;
+width: 70%;
+padding: 2rem;
+border-radius: 12px;
 }
-
-.career-flex > .career-btn-3 {
-  display: flex;
-  justify-content: center;
-}
-.career-btn-3 {
-  margin: 1rem 0 1rem 0;
-  width: 100px;
-  background-color: #fff;
-  color:#1221dc;
+.career-flex-btn{
+  text-align: center;
+  padding:10px;
+  border-radius:5px;
   border: none;
-  border-radius: 12px;
-  padding: 3px;
+  
 }
-
-.career-btn {
-  padding: 2px;
-  background-color: #fff;
-  border: none;
-
-  border-radius: 12px;
+.career-link{
+  text-decoration: none;;
+color:#1221dc;
 }
-
 /* ************************************************* */
 
 
@@ -517,8 +497,8 @@ h1 .h1-color-change {
   justify-content: space-between;
 }
 .contact-container .contact-content .left-side{
-  width: 25%;
-  height: 100%;
+
+width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -526,7 +506,7 @@ h1 .h1-color-change {
   margin-top: 15px;
   position: relative;
 }
-.contact-content .left-side::before{
+/* .contact-content .left-side::before{
   content: '';
   position: absolute;
   height: 70%;
@@ -535,10 +515,11 @@ h1 .h1-color-change {
   top: 50%;
   transform: translateY(-50%);
   background: #afafb6;
-}
+} */
 .contact-content .left-side .details{
-  margin: 14px;
+  margin: 20px;
   text-align: center;
+
 }
 .contact-content .left-side .details i{
   font-size: 30px;
@@ -547,30 +528,30 @@ h1 .h1-color-change {
 }
 .contact-content .left-side .details .topic{
   font-size: 18px;
-  font-weight: 500;
+ 
 }
 .contact-content .left-side .details .text-one,
 .contact-content .left-side .details .text-two{
-  font-size: 14px;
-  color: #afafb6;
+  font-size: 10px;
+  color: #09090c;
+  
 }
 
 
 .contact-container .contact-content .right-side{
-  width: 75%;
+  width: 105%;
   margin-left: 75px;
 }
 .contact-content .right-side .topic-text{
-  text-align: center;
+
   padding: 1rem;;
-  font-size: 23px;
-  font-weight: 600;
+  font-size: 18px;
   color: #1221dc;
 }
 .right-side .input-box{
   height: 50px;
   width: 100%;
-  margin: 12px 0;
+  margin: 1rem ;
 }
 .right-side .input-box input,
 .right-side .input-box textarea{
@@ -687,7 +668,7 @@ ul{
 
 
 .footer-bottom{
- 
+ text-align: center;
   padding: 1rem;
   background-color: #1221dc;
   color:#fff;
