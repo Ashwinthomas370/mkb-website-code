@@ -57,36 +57,6 @@
   }
   /* about section */
 
-  #about {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .image {
-    display: none;
-  }
-  .about-content {
-    height: 90vh;
-    margin: 1rem;
-  }
-  .about-content h2 {
-    font-size: 20px;
-  }
-  .about-content span {
-    /* margin: 20px 0; */
-  }
-  .about-content p {
-    font-size: 14px;
-  }
-  .links li a {
-    font-size: 14px;
-  }
-  .links {
-    margin: 5px 0;
-  }
-  .links li {
-    padding: 6px 10px;
-  }
-
   /* our team */
   .team-row {
     display: grid;
@@ -130,6 +100,7 @@
   .work-container-3 {
     padding: 1rem;
   }
+  
 
   /* ******************our values******************** */
 
@@ -159,36 +130,7 @@
   }
   /* about section */
 
-  #about {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .image {
-    margin: 1rem auto;
-    height: 40vh;
-  }
-  .about-content {
-    height: 90vh;
-    margin: 1rem;
-  }
-  .about-content h2 {
-    font-size: 20px;
-  }
-  .about-content span {
-    /* margin: 20px 0; */
-  }
-  .about-content p {
-    font-size: 14px;
-  }
-  .links li a {
-    font-size: 14px;
-  }
-  .links {
-    margin: 5px 0;
-  }
-  .links li {
-    padding: 6px 10px;
-  }
+  
 
   /* our team */
   .team-row {

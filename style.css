@@ -13,27 +13,48 @@
   height: 70px;
   padding: 10px 10px;
   margin: 1rem;
-  animation-name: spin;
+  /* animation-name: spin;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
-@keyframes spin {
+/* @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 a {
   color: #000;
   text-decoration: none !important;
 }
 
-/* navabar */
+/* button to go up */
+#myButton {
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #020429;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myButton:hover {
+  background-color: #555;
+}
+
+/* ***********************navabar */
 */ .mobile-container {
   max-width: 480px;
   margin: auto;
@@ -77,7 +98,7 @@ a {
 /* call to action section */
 
 #call-to-action {
-  padding: 5rem;
+  padding: 8em;
 }
 
 /* css animation for cta image in home page */
@@ -120,7 +141,7 @@ h1 .h1-color-change {
   color: rgb(99, 99, 99);
 }
 
-.cta-btn {
+/* .cta-btn {
   background-color: #1221dc;
   color: #fff;
   border: none;
@@ -128,7 +149,10 @@ h1 .h1-color-change {
   border-radius: 12px;
   margin: 3.5rem;
 }
-/* our services */
+.cta-btn:hover {
+  color: #fff;
+} */
+/******************************************* our services */
 
 #service-container {
   background-color: #1221dc;
@@ -138,6 +162,7 @@ h1 .h1-color-change {
   color: #fff;
   text-align: center;
   text-decoration: underline #fff dotted;
+  padding:2rem;
 }
 
 .service-box {
@@ -159,12 +184,13 @@ h1 .h1-color-change {
   font-size: 16px;
   text-align: center;
   text-decoration: underline solid;
+  text-decoration-style: wavy;
   padding: 12px;
 }
 
 .service-btn {
   text-align: center;
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
   border: none;
 }
@@ -293,79 +319,54 @@ h1 .h1-color-change {
 
 /* about section */
 #about {
-  justify-content: space-between;
-  align-content: center;
-  min-height: 100vh;
-  /* background-color: #f4f4f4; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+ padding: 30px;
+ font-size: 30px;
+}
+.A-heading {
+  color: #1221dc;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline #1221dc dotted;
+  margin: 20px;;
+}
 
-  margin: 0 auto;
+
+.tab {
+  overflow: hidden;
+  background-color: #fff;
+display:flex;
 }
-.image {
-  max-width: 40vh;
-  margin: 0 auto;
-  border-radius: 13px;
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 10px;
+  transition: 0.1s;
+  font-size: 15px;
 }
-.about-content {
-  margin-right: 2rem;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #1221dc;
+  color:#fff
 }
-.about-content h2 {
-  color: #1221dc;
-  text-transform: uppercase;
-  font-size: 36px;
-  letter-spacing: 6px;
-  opacity: 0.9;
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 16px 25px 20px 20px;
+  font-size: 30px;
 }
-.about-content span {
-  height: 0.5px;
-  width: 80px;
-  background: #777;
-  margin: 30px 0;
+.tabcontent-heading{
+  font-weight: bold;
 }
-.about-content p {
-  padding-bottom: 15px;
-  font-weight: 300;
-  opacity: 0.7;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  line-height: 1.7;
-}
-.links {
-  margin: 15px 0;
-}
-.links li {
-  border: 2px solid #000;
-  list-style: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  width: 160px;
-  text-align: center;
-}
-.links li a {
-  text-transform: uppercase;
-  color: #777;
-  text-decoration: none;
-}
-.links li:hover {
-  border-color: #1221dc;
-}
-.links li:hover a {
-  color: #1221dc;
-}
-.vertical-line {
-  height: 30px;
-  width: 0.5px;
-  background: #777;
-  margin: 0 auto;
-}
-/* ****************************************** */
+/* ******************************************************************************/
 
 /* +++++++++++++++++***************our team */
 #our-team {
@@ -435,62 +436,55 @@ h1 .h1-color-change {
   background-color: #fff;
   color: #1221dc;
 }
+.btn-6:hover {
+  color: #1221dc;
+}
 /* ************************* */
 /* careers */
-
+#careers-container {
+  margin: 3rem;
+}
 .careers-heading {
   color: #1221dc;
   margin: 20px;
   text-align: center;
   text-decoration: underline #1221dc dotted;
+  margin: 1rem;
 }
-
-.careers-box {
-  background-color: #fff;
-  text-align: justify;
-  padding: 40px;
-  margin: 50px;
-  border-radius: 12px;
+/* form section in careers */
+.form-heading {
+  font-size: 20px;
   color: #1221dc;
-  transition: 1s;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px;
 }
-
-.careers-box:hover {
+.form-body {
+  color: #000;
+}
+.form-submit-btn {
   background-color: #1221dc;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
-}
-.careers-box h2 {
-  font-size: 16px;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: underline solid;
-  padding: 12px;
+  padding: 5px;
 }
 
-.apply-btn {
-  background-color: #020429;
-  color: rgb(255, 255, 255);
-}
+
+
 
 /* ************************************************* */
 
 /* contact section */
 
 .Contact-heading {
-  color: #1221dc;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
-  text-decoration: underline #1221dc dotted;
+  text-decoration: underline #ffffff dotted;
 }
 .contact-container {
   background: #1221dc;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
 }
-.contact-container .contact-content {
+/* .contact-container .contact-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -503,7 +497,7 @@ h1 .h1-color-change {
   justify-content: center;
   margin-top: 15px;
   position: relative;
-}
+} */
 /* .contact-content .left-side::before{
   content: '';
   position: absolute;
@@ -514,32 +508,38 @@ h1 .h1-color-change {
   transform: translateY(-50%);
   background: #afafb6;
 } */
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
 .contact-content .left-side .details {
-  margin: 20px;
   text-align: center;
+  margin: 4rem;
 }
 .contact-content .left-side .details i {
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
-  margin-bottom: 10px;
 }
 .contact-content .left-side .details .topic {
-  font-size: 18px;
+  /* font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  margin: 1rem; */
 }
 .contact-content .left-side .details .text-one,
 .contact-content .left-side .details .text-two {
-  font-size: 10px;
+  font-size: 20px;
   color: #fff;
 }
-
+/* 
 .contact-container .contact-content .right-side {
-  width: 105%;
+  width: 100%;
   margin-left: 75px;
 }
 .contact-content .right-side .topic-text {
   padding: 1rem;
   font-size: 18px;
-  color: #fff;
+  color: #1221dc;
 }
 .right-side .input-box {
   height: 50px;
@@ -552,7 +552,7 @@ h1 .h1-color-change {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 12px;
   background: #f0f1f8;
   border-radius: 6px;
   padding: 0 15px;
@@ -569,20 +569,22 @@ h1 .h1-color-change {
   margin-top: 12px;
 }
 .right-side .button input[type="button"] {
-  color: #fff;
-  font-size: 18px;
+  color: #1221dc;
+  font-size: 14px;
   outline: none;
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
   background: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
+  margin-left: 15px;
+} */
+.btn-mail {
+  background: #fff;
+  color: #1221dc;
+  padding: 5px;
+  border-radius: 8px;
 }
-.button input[type="button"]:hover {
-  background: #4f5492;
-}
-
 /* ************************ */
 
 /* footer */
